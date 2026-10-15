@@ -1,0 +1,11 @@
+{
+  "framework": "vite",
+  "buildCommand": "pnpm build:static",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/((?!api/|assets/|manus-routes\\.json$).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
